@@ -1,43 +1,46 @@
-# Music Recommendation System
+# 🎵 Music Recommendation System
 
-A content-based music recommendation system built using Python, Pandas, and Scikit-learn. The system recommends songs that are similar to a selected song based on its audio features.
+A content-based music recommendation system built using **Python, Pandas, Scikit-learn, and Streamlit**.
 
-## How It Works
+The system recommends songs that are musically similar to a selected song using audio-related features such as **danceability, energy, acousticness, and valence**.
 
-The system uses four audio-related features:
+## 🚀 Features
 
-* Danceability
-* Energy
-* Acousticness
-* Valence
+* 🎵 Select a song from the available dataset
+* 🔎 Find similar songs using cosine similarity
+* 📊 Scale numerical features using StandardScaler
+* 🎯 Choose the number of recommendations
+* 🌐 Interactive Streamlit web interface
+* 💻 Command-line recommendation version
 
-The feature values are first standardized using `StandardScaler`. The system then calculates the similarity between songs using **cosine similarity**.
+## 🧠 How It Works
 
-When a user enters a song name, the system finds songs with the most similar feature patterns and displays the top recommendations.
+The system follows these steps:
 
-## Example
+1. Loads the song dataset using Pandas.
+2. Selects important numerical music features.
+3. Scales the features using `StandardScaler`.
+4. Calculates similarity between songs using **cosine similarity**.
+5. Finds the songs most similar to the selected song.
+6. Displays the recommendations through a Streamlit web interface.
 
-```text
-Enter a song name: Believer
+### Features Used
 
-Recommendations for: Believer
---------------------------------------------------
-1. Don't Start Now - Dua Lipa (Pop)
-2. Levitating - Dua Lipa (Pop)
-3. On My Way - Alan Walker (Electronic)
-4. Demons - Imagine Dragons (Rock)
-5. Counting Stars - OneRepublic (Pop Rock)
-```
+* **Danceability** – How suitable a song is for dancing.
+* **Energy** – The intensity and activity level of the song.
+* **Acousticness** – How strongly the song resembles acoustic music.
+* **Valence** – The musical positivity or mood of the song.
 
-## Technologies Used
+## 🖥️ Web Application
 
-* Python
-* Pandas
-* Scikit-learn
-* Cosine Similarity
-* StandardScaler
+The project includes an interactive Streamlit interface where users can:
 
-## Project Structure
+1. Select a song.
+2. Choose the number of recommendations.
+3. Click **Recommend Songs**.
+4. View recommended songs along with their artists, genres, and similarity scores.
+
+## 📁 Project Structure
 
 ```text
 Music-Recommendation-System/
@@ -45,25 +48,37 @@ Music-Recommendation-System/
 ├── data/
 │   └── songs.csv
 │
+├── app.py
 ├── recommend.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
 
-## Dataset
+## 🛠️ Technologies Used
 
-The project uses a sample dataset containing:
+* Python
+* Pandas
+* Scikit-learn
+* Streamlit
+* Git
+* GitHub
 
-* Song name
-* Artist
-* Genre
-* Danceability
-* Energy
-* Acousticness
-* Valence
+## 📊 Dataset
 
-## How to Run
+The dataset contains information about songs and their musical characteristics.
+
+| Column       | Description              |
+| ------------ | ------------------------ |
+| song         | Song name                |
+| artist       | Artist name              |
+| genre        | Music genre              |
+| danceability | Danceability score       |
+| energy       | Energy score             |
+| acousticness | Acousticness score       |
+| valence      | Musical positivity score |
+
+## ▶️ How to Run
 
 ### 1. Clone the repository
 
@@ -83,28 +98,33 @@ cd Music-Recommendation-System
 pip install -r requirements.txt
 ```
 
-### 4. Run the recommendation system
+### 4. Run the Streamlit application
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+## 💻 Command-Line Version
+
+The recommendation system can also be run directly from the terminal:
 
 ```bash
 python recommend.py
 ```
 
-### 5. Enter a song name
+Enter a song name when prompted to receive recommendations.
 
-For example:
+## 🔮 Future Improvements
 
-```text
-Believer
-```
+* Use a larger real-world music dataset.
+* Add more audio features.
+* Include album artwork and song previews.
+* Add genre and artist filtering.
+* Improve the recommendation algorithm using additional machine learning techniques.
+* Deploy the Streamlit application online.
 
-## Future Improvements
+## 🎯 Project Objective
 
-* Add a larger music dataset
-* Add more audio features
-* Build a graphical or web-based interface
-* Allow users to select the number of recommendations
-* Improve recommendations using additional machine learning techniques
-
-## Project Objective
-
-The objective of this project is to demonstrate how similarity-based recommendation can be used to suggest songs with similar characteristics based on numerical audio features.
+The objective of this project is to demonstrate how **machine learning-based similarity techniques** can be used to build a simple personalized music recommendation system.
