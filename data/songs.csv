@@ -1,0 +1,21 @@
+song,artist,genre,danceability,energy,acousticness,valence
+Shape of You,Ed Sheeran,Pop,0.83,0.65,0.58,0.93
+Perfect,Ed Sheeran,Pop,0.60,0.45,0.78,0.17
+Blinding Lights,The Weeknd,Pop,0.75,0.73,0.00,0.33
+Believer,Imagine Dragons,Rock,0.78,0.91,0.06,0.67
+Thunder,Imagine Dragons,Rock,0.61,0.82,0.03,0.29
+Someone Like You,Adele,Pop,0.56,0.33,0.89,0.29
+Bad Guy,Billie Eilish,Pop,0.70,0.43,0.33,0.56
+Lovely,Billie Eilish,Pop,0.35,0.30,0.93,0.12
+Levitating,Dua Lipa,Pop,0.70,0.83,0.01,0.91
+Don't Start Now,Dua Lipa,Pop,0.79,0.79,0.01,0.68
+Counting Stars,OneRepublic,Pop Rock,0.66,0.71,0.07,0.48
+Demons,Imagine Dragons,Rock,0.70,0.71,0.19,0.43
+Havana,Camila Cabello,Pop,0.77,0.52,0.18,0.39
+Stay,The Kid LAROI,Pop,0.54,0.47,0.04,0.48
+Faded,Alan Walker,Electronic,0.63,0.73,0.03,0.16
+On My Way,Alan Walker,Electronic,0.67,0.74,0.02,0.57
+Memories,Maroon 5,Pop,0.76,0.43,0.84,0.57
+Girls Like You,Maroon 5,Pop,0.85,0.54,0.45,0.75
+Cheap Thrills,Sia,Pop,0.63,0.73,0.05,0.73
+Chandelier,Sia,Pop,0.40,0.78,0.02,0.29
